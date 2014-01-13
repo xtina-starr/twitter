@@ -1,6 +1,5 @@
 Twitter::Application.routes.draw do
   get "tweets" => "tweets#index"
-  get "tweets/show"
   get "tweets/new" => "tweets#new"
   post "tweets" => "tweets#create"
   get "tweets/:id" =>"tweets#show", as: :tweet_show

@@ -1,0 +1,7 @@
+<h1>Tweeters</h1>
+<% Tweet.all.each do |t| %>
+  <%= link_to t.author, "/tweets/#{t.id}" %>
+  <%= t.body %><br>
+<% end %>
+<%= link_to "Create a tweet", "/tweets/new" %>
+

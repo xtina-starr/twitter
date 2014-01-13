@@ -1,0 +1,8 @@
+<h1>Tweets</h1>
+<%= form_for @tweet do |f| %>
+<%= f.label :body %>
+<%= f.text_area :body %>
+<%= f.label :author %>
+<%= f.text_field :author %>
+<%= f.submit "Save" %>
+<% end %>
